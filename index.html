@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RR Site</title>
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="navbar" class="fixed my-0 top-0 w-full flex justify-center item bg-transparent p-5 text-white " style="z-index: 999;">
+    <div class="max-w-5xl flex justify-between items-center w-full p-5 gap-2.5 h-full"><!--header interno-->
+      <div class="flex justify-between w-full h-full items-center pr-4" style="border-right:1px solid rgba(105, 105, 105, 0.596) ;"><!--nav + logo-->
+        <div> <!--logo-->
+          <img src="./RR_WHITE.png" style="width: 60px;" alt="">
+        </div><!--logo-->
+        <div class="px-5 lg:hidden">
+          <a href="javascript:void(0);" onclick="openFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <div class="lg:flex gap-2.5 hidden"><!--nav-->
+            <a href="">Home</a>
+            <a href="">Minhas Informações</a>
+            <a href="">Psicanálise</a>
+            <a href="">Psicologia Analítica</a>
+            <a href="">Contato</a>
+        </div><!--nav-->
+      </div><!--nav + logo-->
+      <div><!--whatsapp-->
+        <img src="./whatsapp-white.png" style="width: 25px;" alt="">
+      </div> <!--whatsapp-->
+    </div><!--header interno-->
+  </header>
+
+  <div id="mobileMenu" class="bg-white bottom-0 left-0 fixed flex flex-col justify-start items-center pt-3 h-screen" style="z-index: 10000;  width:100%; height: 0px;"><!--mobile-navbar-->
+    <div class="flex justify-end pr-28 w-full">
+      <div>
+        <a href="javascript:void(0);" onclick="closeFunction()">
+          <i class="fa-solid fa-x" id="close-icon"></i>
+        </a>
+      </div>
+    </div>
+    <div class="pt-20 flex flex-col">
+      <h2>Um teste</h2>
+
+      <a href=""> Blablabla</a>
+
+      <a href=""> Blablabla</a>
+    </div>
+  </div><!--mobile-navbar-->
+
+  <div class="flex flex-col"><!--Main content-->
+
+    <!--Primeiro Conteudo-->
+
+    <div  class="flex flex-grow"style="background-image: url('livros.jpg'); margin-top: -150px;
+                  background-repeat: no-repeat;background-size: cover;"><!--primeiro conteudo -imagem de background-->
+
+      <div class="flex flex-column flex-grow items-center justify-center" style="background-image: radial-gradient(rgba(235, 235, 235, 0.507), rgba(99, 99, 99, 0.527), rgb(3, 3, 3)); z-index: 10;height: calc(100vh + 150px);"><!--overlay-->
+          <div style="padding-top:200px; padding-left: 80px;padding-bottom:40px; height: calc(100vh + 150px);" class="flex flex-grow w-full items-end md:items-center text-center max-w-5xl md:text-left min-h-screen"><!--primeiro conteudo-->
+            <div class="flex flex-col "><!--conteudo-->
+              <div ><h2 class="text-white uppercase font-bold text-3l">Rahttega Rain</h2></div>
+              <div><h1 class="text-white uppercase font-bold">Jornadologia Oh Yeah</h1></div>
+              <div class="text-white uppercase font-bold text-l">Eu sou a Marylin Monroe do Rock</div>
+              <div class="text-white pt-7"><a class=" blue-bg px-5 py-3 rounded uppercase font-bold" href="">Entenda melhor</a></div>
+            </div><!--conteudo-->
+          </div><!--primeiro conteudo-->
+      </div><!--overlay-->
+    </div><!--primeiro conteudo -imagem de background-->
+
+    <!--Segundo Conteudo-->
+
+    <div class="md:flex"><!--segundo conteudo-->
+      <div class="w-full md:w-1/2 min-h-screen md:min-h-0" style="background-image: url('livros2.jpg');
+                  background-repeat: no-repeat;background-size: cover;"><!--imagem segundo conteudo-->
+      </div><!--imagem segundo conteudo-->
+      <div class="w-full md:w-1/2 flex justify-center pb-7 blue-bg p-3"><!--texto segundo conteudo-->
+        <div class="texto-2quadros"><!--conteudo-->
+          <h1 class=" uppercase h1-quadros">Ricardo Ramalho</h1>
+          <h2 class="h2-2quadros text-white">Formação</h2>
+          <ul class="lista-formacao">
+            <li>
+              Formado em Psicologia Analítica pelo Instituto Esfera/Távola.
+            </li>
+            <li>
+              Formado em Psicanálise pelo IBPC (Instituto Brasileiro de Psicanálise).
+            </li>
+            <li>
+              Formado em Terapias Holísticas pela ABRATH (Associação Brasileira dos Terapeutas Holísticos).
+            </li>
+            <li>
+              Pós-Graduação em Arteterapia - Faculdade Líbano
+            </li>
+            <li>
+              Pós-Graduação em Literatura Comparada - Faculdade Líbano
+            </li>
+            <li>
+              Pós-Graduação em Religião Comparada - Faculdade Cenes
+            </li>
+            <li>
+              Pós-Graduação em Mitologia Comparada - Instituto Dedalus
+            </li>
+            <li>
+              Pós-Graduação em Contos de Fadas - Instituto Dedalus
+            </li>
+            <li>
+              Pós-Graduação em História Geral - Faculdade Focus
+            </li>
+            <li>
+              Pós-Graduação em História das Religiões - Faculdade Cenes
+            </li>
+            <li>
+              Pós-Graduação em Antropologia Social e Cultural - Faculdade Focus
+            </li>
+            <li>
+              Pós-Graduação em História da Arte - Faculdade Focus
+            </li>
+            <li>
+              Pós-Graduação em Teologia Comparada - Faculdade Cenes
+            </li>
+            <li>
+              Pós-Graduação em Teologia Sistemática - Faculdade Cenes
+            </li>
+            <li>
+              Pós-Graduação em Teoria da Literatura e Produção Textual - Faculdade Focus
+            </li>
+            <li>
+              Pós-Graduação em Letras com ênfase em Linguística - Faculdade Focus
+            </li>
+          </ul>
+
+          <h2 class="h2-2quadros">Cursos</h2>
+          <ul class="lista-formacao">
+            <li>
+              Pecados, uma anatomia da alma - Luiz Felipe Pondé
+            </li>
+            <li>
+              Seminário Eleusis Joseph Campbell - Mitosfera
+            </li>
+            <li>
+              Escrita Literária - Marcelino Freire
+            </li>
+            <li>
+              Escrita Criativa - Quadro Amarelo
+            </li>
+            <li>
+              A Formação do imaginário - A outra via
+            </li>
+          </ul>
+
+
+        </div><!--conteudo-->
+
+      </div><!--texto segundo conteudo-->
+    </div><!--segundo conteudo-->
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full bloco4"><!--galeria-->
+
+        <div class="border border-white w-full" style="aspect-ratio: 1/1; background-image: url('livros.jpg');
+        background-repeat: no-repeat;background-size: cover;"><!--imagem segundo conteudo-->
+        </div>
+        <div class=" border border-white w-full" style="aspect-ratio: 1/1;background-image: url('livros2.jpg');
+        background-repeat: no-repeat;background-size: cover;"><!--imagem segundo conteudo-->
+        </div>
+
+
+        <div class="border border-white w-full" style="aspect-ratio: 1/1;background-image: url('livros.jpg');
+        background-repeat: no-repeat;background-size: cover;"><!--imagem segundo conteudo-->
+        </div>
+        <div class=" border border-white w-full" style="aspect-ratio: 1/1;background-image: url('livros2.jpg');
+        background-repeat: no-repeat;background-size: cover;"><!--imagem segundo conteudo-->
+        </div>
+
+
+    </div><!--galeria-->
+
+    <div class="w-full flex justify-center blue-bg py-28 p-3"><!--valor do atenidmento-->
+      <div class="text-center " style="width: 800px"><!--texto valor atendimento-->
+        <h1 class="h1-quadros">Qual o Valor do atendimento?</h1>
+        <p>Os valores dos atendimentos são definidos mediante uma conversa detalhada e compreensiva com o paciente, a abordagem permite que as particularidades e necessidades individuais sejam cuidadosamente consideradas, garantindo uma valoração justa e adequada que respeita a singularidade de cada caso, este processo assegura uma aliança fundamentada no entendimento mútuo e na flexibilidade, a abordagem do atendimento (Análise Junguiana ou Psicanálise) será definida de acordo com o entendimento da necessidade de cada pessoa.</p>
+        <p>Atendimentos na modalidade online, podem ser realizados via Google Meeting, Whatsapp Video ou Skype</p>
+        </div><!--texto valor atendimento-->
+    </div><!--valor do atenidmento-->
+
+
+
+
+<!--Segundo Conteudo-->
+
+<div class="md:flex"><!--terceiro conteudo-->
+  <div class="w-full md:w-1/2 min-h-screen md:min-h-0" style="background-image: url('Persona.jpg');
+              background-repeat: no-repeat;background-size: cover;background-position: center;"><!--imagem terceiro conteudo-->
+  </div><!--imagem terceiro conteudo-->
+  <div class="w-full md:w-1/2 flex justify-center pb-7 gray-bg p-3"><!--texto terceiro conteudo-->
+    <div class="texto-2quadros"><!--conteudo-->
+      <h1 class=" uppercase h1-quadros">Análise Jungiana</h1>
+      <h2 class="h2-2quadros blue-text">A persona</h2>
+      <p class="blue-text">
+        A Persona, na Psicologia Analítica de Carl Jung, é a máscara social que usamos para nos adaptar às expectativas externas. Sua importância reside em equilibrar nosso eu autêntico com o mundo externo, permitindo interações sociais saudáveis. No entanto, a identificação excessiva com a Persona pode causar alienação e mal-estar psicológico, como ansiedade e depressão. A terapia junguiana busca integrar a Persona ao self verdadeiro, promovendo uma vida mais autêntica e plena, respeitando a singularidade de cada indivíduo.
+      </p>
+
+
+
+    </div><!--conteudo-->
+
+  </div><!--texto terceiro conteudo-->
+</div><!--terceiro conteudo-->
+
+
+<div class="w-full flex justify-center green-bg py-28 p-3"><!--o que é psico analit-->
+  <div class="text-center " style="width: 800px"><!--texto o que é psico analit-->
+    <h1 class="h1-quadros">O que é Psicologia Analítica?</h1>
+    <p>A Psicologia Analítica, criada por Carl Gustav Jung, explora a mente humana através do inconsciente coletivo, individual, dos arquétipos, padrões universais que influenciam nossas experiências, utilizando sonhos, símbolos, os aspectos ocultos e reprimidos da personalidade que chamamos de sombras. Essa abordagem busca integrar aspectos conscientes e inconscientes da psique, promovendo equilíbrio interior e autoconhecimento.</p>
+    <p>Focada no processo de individuação, a Psicologia Analítica ajuda cada indivíduo a realizar seu potencial completo, revelando significados até então desconhecidos e compreendendo conflitos internos. Ao considerar tanto o inconsciente coletivo quanto o inconsciente individual, visa não apenas tratar sintomas, mas também fomentar um crescimento psicológico contínuo e uma transformação pessoal profunda e duradoura.</p>
+    </div><!--texto o que é psico analit-->
+</div><!--o que é psico analit-->
+
+
+
+    <!--Quarto Conteudo-->
+
+    <div class="md:flex"><!--quarto conteudo-->
+      <div class="w-full md:w-1/2 min-h-screen md:min-h-0" style="background-image: url('livros2.jpg');
+                  background-repeat: no-repeat;background-size: cover;"><!--imagem quarto conteudo-->
+      </div><!--imagem quarto conteudo-->
+      <div class="w-full md:w-1/2 flex justify-center pb-7 blue-bg p-3"><!--texto quarto conteudo-->
+        <div class="texto-2quadros"><!--conteudo-->
+          <h1 class="h1-quadros">Qual a Diferença do Analista Junguiano para o Psicólogo?</h1>
+          <p>A diferença entre um Analista Junguiano e um psicólogo reside na abordagem e nos fundamentos teóricos utilizados, enquanto o psicólogo pode seguir diversas correntes da psicologia, aplicando técnicas variadas conforme o caso, o Analista Junguiano foca na psicologia analítica de Carl Gustav Jung, esta explora profundamente o inconsciente coletivo, os arquétipos e os símbolos presentes nos sonhos e mitos, visando a individuação e o desenvolvimento integral da personalidade, a prática junguiana enfatiza o simbolismo e a integração de aspectos inconscientes à consciência, promovendo uma jornada de autoconhecimento e transformação pessoal.</p>
+
+
+
+        </div><!--conteudo-->
+
+      </div><!--texto quarto conteudo-->
+    </div><!--quarto conteudo-->
+
+    <div class="w-full flex justify-center gray-bg py-28 blue-text p-3"><!--quando procurar um analista-->
+      <div class="text-center " style="width: 800px"><!--texto quando procurar um analista-->
+        <h1 class="h1-quadros">Quando procurar um analista?</h1>
+        <p>Procurar um analista junguiano é indicado em diversas situações, como traumas passados que ainda afetam a vida, crises existenciais sobre o propósito da vida e a busca por um autoconhecimento mais profundo. A análise junguiana é eficaz para tratar ansiedade e depressão, explorando e integrando aspectos inconscientes que influenciam essas condições.</p>
+        <p>Além disso, é recomendada para aqueles que sentem insatisfação constante com o cotidiano e querem entender as raízes emocionais desses sentimentos, questões emocionais complexas encontram na psicologia junguiana um caminho para transformação e crescimento pessoal.</p>
+      </div><!--texto quando procurar um analista-->
+    </div><!--quando procurar um analista-->
+
+
+        <!--quinto Conteudo-->
+
+        <div class="md:flex"><!--quinto conteudo-->
+          <div class="w-full md:w-1/2 min-h-screen md:min-h-0" style="background-image: url('livros2.jpg');
+                      background-repeat: no-repeat;background-size: cover;"><!--imagem quinto conteudo-->
+          </div><!--imagem quinto conteudo-->
+          <div class="w-full md:w-1/2 flex justify-center pb-7 green-bg p-3"><!--texto quinto conteudo-->
+            <div class="texto-2quadros"><!--conteudo-->
+              <h1 class=" uppercase h1-quadros">Psicanálise</h1>
+              <h2 class="h2-2quadros ">Eros e Thanatos</h2>
+             <p>Eros e Thanatos são conceitos centrais na teoria de Sigmund Freud. Eros representa a força da vida, do amor e da criatividade. É a energia que nos impulsiona a buscar prazer, conexão e criar vínculos afetivos, promovendo a continuidade da vida.</p>
+             <p>Thanatos, por outro lado, refere-se ao instinto de morte, que envolve uma tendência natural ao descanso e à redução de tensões. Freud via esses dois instintos como forças opostas, mas complementares.</p>
+             <p>A psicanálise busca equilibrar Eros e Thanatos, promovendo uma vida mais harmoniosa e consciente, onde a busca pelo prazer e a necessidade de tranquilidade encontram um ponto de equilíbrio saudável.</p>
+
+
+            </div><!--conteudo-->
+
+          </div><!--texto quinto conteudo-->
+        </div><!--quinto conteudo-->
+
+        <div class="w-full flex justify-center blue-bg py-28 text-white p-3"><!--O que é Psicanálise-->
+          <div class="text-center " style="width: 800px"><!--texto O que é Psicanálise-->
+            <h1 class="h1-quadros">O que é Psicanálise?</h1>
+            <p>Psicanálise é um método terapêutico criado por Sigmund Freud, que busca entender e tratar problemas emocionais através da exploração do inconsciente, a ideia central é que muitas de nossas ações e sentimentos são influenciados por desejos e memórias reprimidas, que nem sempre estão à nossa vista, no tratamento psicanalítico, o paciente fala livremente sobre seus pensamentos, sonhos e lembranças, enquanto o analista escuta atentamente, ajudando a identificar e compreender os conflitos internos, isso proporciona insights sobre comportamentos e emoções, permitindo resolver traumas e alcançar um maior autoconhecimento, a psicanálise não se limita a tratar sintomas, mas visa uma transformação profunda, ajudando a pessoa a entender suas motivações mais íntimas e a encontrar um equilíbrio emocional duradouro, é uma jornada de autodescoberta, que promove mudanças significativas na vida de quem se engaja no processo terapêutico, com a ajuda de um psicanalista, é possível enfrentar desafios emocionais e viver de forma mais plena e consciente.</p>
+          </div><!--texto O que é Psicanálise-->
+        </div><!--O que é Psicanálise-->
+
+        <!--sexto Conteudo-->
+
+        <div class="md:flex"><!--sexto conteudo-->
+          <div class="w-full md:w-1/2 min-h-screen md:min-h-0" style="background-image: url('livros2.jpg');
+                      background-repeat: no-repeat;background-size: cover;"><!--imagem sexto conteudo-->
+          </div><!--imagem sexto conteudo-->
+          <div class="w-full md:w-1/2 flex justify-center pb-7 gray-bg p-3"><!--texto sexto conteudo-->
+            <div class="texto-2quadros"><!--conteudo-->
+              <h1 class="h1-quadros">Qual a Diferença do Psicanalista para o Psicólogo?</h1>
+              <p class="blue-text">A diferença entre um psicólogo e um psicanalista está na abordagem e formação, o psicólogo possui formação em psicologia e pode seguir diversas correntes teóricas, como a comportamental, cognitiva ou humanista, aplicando técnicas variadas para avaliação, diagnóstico e tratamento de questões emocionais e comportamentais, o psicanalista, por outro lado, tem uma formação específica em psicanálise, baseado nas teorias de Sigmund Freud, o psicanalista foca na exploração do inconsciente, utilizando métodos como a livre associação e a análise de sonhos, seu propósito é desvendar traumas e conflitos internos, facilitando um autoconhecimento profundo e promovendo uma transformação pessoal significativa, isso capacita o paciente a reconhecer e integrar aspectos ocultos de sua psique na vida cotidiana, resultando em um equilíbrio emocional mais sólido e duradouro.</p>
+            </div><!--conteudo-->
+
+          </div><!--texto sexto conteudo-->
+        </div><!--sexto conteudo-->
+
+        <div class="w-full flex justify-center green-bg py-28 text-white p-3"><!--Quando Procurar um Psicanalista-->
+          <div class="text-center " style="width: 800px"><!--texto Quando Procurar um Psicanalista-->
+            <h1 class="h1-quadros">Quando Procurar um Psicanalista?</h1>
+            <p>É indicado quando se enfrenta dificuldades emocionais persistentes, como ansiedade, depressão ou traumas passados. Se problemas de relacionamento parecem insolúveis ou se há um sentimento constante de insatisfação e perda de interesse nas atividades diárias, a psicanálise pode ser útil.</p>
+            <p>Questões existenciais sobre o propósito da vida, conflitos internos e padrões de comportamento autodestrutivos também são motivos para buscar um psicanalista. Esta abordagem é benéfica para quem deseja compreender profundamente seus desejos, medos e motivações inconscientes. </p>
+            <p>Se experiências passadas ainda afetam negativamente a vida presente, a psicanálise oferece uma oportunidade de exploração e resolução de questões profundas, promovendo autoconhecimento e crescimento pessoal.</p>
+          </div><!--texto Quando Procurar um Psicanalista-->
+        </div><!--Quando Procurar um Psicanalista-->
+
+
+
+<div class="grid grid-cols-2 pb-16" style="max-width: 1200px; margin-left: auto;margin-right: auto; margin-top: -70px;margin-bottom: 70px;">
+  <div style="width: 400px; height: 450px; border-right: 1px solid black; gap:30px;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;"class="flex flex-col justify-center  items-center bg-white">
+    <img src="./whatsapp.png" style="width:60px" alt="">
+    <h2 class="h2-card py-8">(11)99102-7337</h2>
+    <p>Agende pelo nosso whatsapp</p>
+    <a href="">AGENDAR</a>
+  </div>
+  <div style="width: 400px; height: 450px; gap:30px; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;"class="flex flex-col justify-center  items-center bg-white">
+    <img src="./mail.png" style="width:60px" alt="">
+    <h2 class="h2-card py-8">(11)99102-7337</h2>
+    <p>Agende pelo nosso E-mail</p>
+    <a href="">AGENDAR</a>
+  </div>
+</div>
+
+
+
+
+  </div><!--Main content-->
+
+  <footer class="w-full  p-5 green-bg brown-text text-center flex justify-center">
+    <div class="max-w-5xl  grid w-full p-5 gap-2.5 lg:grid-cols-4 md:grid-cols-2 justify-center items-center"><!--footer interno-->
+      <div class="text-center w-full col-span-2 lg:col-span-1 pb-10 lg:pb-0" >
+        <div >
+          <img src="./RR_WHITE.png" style="width: 60px; margin: auto;" alt="">
+        </div>
+        <p style="font-size: 12px; max-width: 565px; margin:auto">Este website tem caráter informativo e educacional. O paciente jamais deve usar seu conteúdo para autodiagnóstico ou autotratamento. Converse com um especialista.</p>
+      </div>
+      <div class="col-span-2 md:col-span-1">
+        <h3>Explore</h3>
+        <ul>
+          <li>Home</li>
+          <li>Minhas informações</li>
+          <li>Psicanálise</li>
+          <li>Contato</li>
+        </ul>
+      </div>
+      <div class="col-span-2 md:col-span-1">
+        <h3>Endereço</h3>
+        <p>Blablabla</p>
+        <p>(11) 99999-9999</p>
+      </div>
+      <hr class=" col-span-2 lg:hidden lg:col-span-1">
+      <div class="col-span-2 lg:col-span-1"> direitos autorais blablabla</div>
+    </div><!--footer interno-->
+  </footer>
+</body>
+
+
+
+
+
+
+
+<script>
+var prevScrollpos = window.scrollY;
+window.onscroll = function() {
+  var currentScrollPos = window.scrollY;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-104px";
+  }
+  prevScrollpos = currentScrollPos;
+  if (window.scrollY==0) {
+    document.getElementById("navbar").style.backgroundColor = "transparent";
+  }
+  else {
+    document.getElementById("navbar").style.backgroundColor = "#082C51";
+  }
+}
+function closeFunction(){
+  var x = document.getElementById("mobileMenu");
+  x.style.height = "0px";
+  }
+
+function openFunction(){
+  var x = document.getElementById("mobileMenu");
+  x.style.height = "100vh";
+  }
+
+</script>
+</html>
