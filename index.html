@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div id="top-of-page"></div>
   <header id="navbar" class="fixed my-0 top-0 w-full flex justify-center item bg-transparent p-5  " style="z-index: 999;">
     <div class="max-w-5xl flex justify-between items-center w-full p-5 gap-2.5 h-full"><!--header interno-->
       <div class="flex justify-between w-full h-full items-center pr-4" style="border-right:1px solid rgba(105, 105, 105, 0.596) ;"><!--nav + logo-->
@@ -22,8 +23,8 @@
             <i class="fa fa-bars"></i>
           </a>
         </div>
-        <div class="lg:flex gap-2.5 hidden"><!--nav-->
-            <a href="">Home</a>
+        <div class="lg:flex gap-2.5 hidden text-white"><!--nav-->
+            <a href="#top-of-page">Home</a>
             <a href="">Minhas Informações</a>
             <a href="">Psicanálise</a>
             <a href="">Psicologia Analítica</a>
@@ -79,9 +80,9 @@
       <div class="w-full md:w-1/2 min-h-screen md:min-h-0" style="background-image: url('livros2.jpg');
                   background-repeat: no-repeat;background-size: cover;"><!--imagem segundo conteudo-->
       </div><!--imagem segundo conteudo-->
-      <div class="w-full md:w-1/2 flex justify-center pb-7 blue-bg p-3"><!--texto segundo conteudo-->
+      <div class="w-full md:w-1/2 flex justify-center  blue-bg px-7 md:p-1"><!--texto segundo conteudo-->
         <div class="texto-2quadros"><!--conteudo-->
-          <h1 class=" uppercase h1-quadros">Ricardo Ramalho</h1>
+          <h1 class="h1-quadros">Ricardo Ramalho</h1>
           <h2 class="h2-2quadros text-white">Formação</h2>
           <ul class="lista-formacao text-justify">
             <li>
@@ -152,8 +153,6 @@
               A Formação do imaginário - A outra via
             </li>
           </ul>
-
-
         </div><!--conteudo-->
 
       </div><!--texto segundo conteudo-->
@@ -164,7 +163,7 @@
         <div class="border border-white w-full" style="aspect-ratio: 1/1; background-image: url('livros.jpg');
         background-repeat: no-repeat;background-size: cover;"><!--imagem segundo conteudo-->
         </div>
-        <div class=" border border-white w-full" style="aspect-ratio: 1/1;background-image: url('livros2.jpg');
+        <div class=" border border-white w-full" style="aspect-ratio: 1/1;background-image: url('freudjungapple.jpg');
         background-repeat: no-repeat;background-size: cover;"><!--imagem segundo conteudo-->
         </div>
 
@@ -198,7 +197,7 @@
   <div class="w-full md:w-1/2 min-h-screen md:min-h-0" style="background-image: url('Persona.jpg');
               background-repeat: no-repeat;background-size: cover;background-position: center;"><!--imagem terceiro conteudo-->
   </div><!--imagem terceiro conteudo-->
-  <div class="w-full md:w-1/2 flex justify-center pb-7 gray-bg p-3"><!--texto terceiro conteudo-->
+  <div class="w-full md:w-1/2 flex justify-center pb-7 gray-bg px-7 md:p-3"><!--texto terceiro conteudo-->
     <div class="texto-2quadros"><!--conteudo-->
       <h1 class=" uppercase h1-quadros">Análise Jungiana</h1>
       <h2 class="h2-2quadros blue-text">A persona</h2>
@@ -234,7 +233,7 @@
       <div class="w-full md:w-1/2 min-h-screen md:min-h-0" style="background-image: url('livros2.jpg');
                   background-repeat: no-repeat;background-size: cover;"><!--imagem quarto conteudo-->
       </div><!--imagem quarto conteudo-->
-      <div class="w-full md:w-1/2 flex justify-center pb-7 blue-bg p-3"><!--texto quarto conteudo-->
+      <div class="w-full md:w-1/2 flex justify-center pb-7 blue-bg px-7 md:p-3"><!--texto quarto conteudo-->
         <div class="texto-2quadros"><!--conteudo-->
           <h1 class="h1-quadros">Qual a Diferença do Analista Junguiano para o Psicólogo?</h1>
           <div class="text-justify">
@@ -265,7 +264,7 @@
           <div class="w-full md:w-1/2 min-h-screen md:min-h-0" style="background-image: url('livros2.jpg');
                       background-repeat: no-repeat;background-size: cover;"><!--imagem quinto conteudo-->
           </div><!--imagem quinto conteudo-->
-          <div class="w-full md:w-1/2 flex justify-center pb-7 green-bg p-3"><!--texto quinto conteudo-->
+          <div class="w-full md:w-1/2 flex justify-center pb-7 green-bg px-7 md:p-3"><!--texto quinto conteudo-->
             <div class="texto-2quadros"><!--conteudo-->
               <h1 class=" uppercase h1-quadros">Psicanálise</h1>
               <h2 class="h2-2quadros ">Eros e Thanatos</h2>
@@ -405,6 +404,27 @@ function openFunction(){
   x.style.height = "100vh";
   x.style.width = "100vw";
   }
+
+function smoothScroll(target) {
+  const element = document.getElementById(target);
+  if (element) {
+    window.scrollTo({
+      top: element.offsetTop,
+      behavior: 'smooth'
+    });
+  }
+}
+document.addEventListener('DOMContentLoaded', function() {
+  const anchors = document.querySelectorAll('a[href^="#"]');
+  anchors.forEach(function(anchor) {
+    anchor.addEventListener('click', function(event) {
+      event.preventDefault();
+      const target = anchor.getAttribute('href').substring(1);
+      smoothScroll(target);
+    });
+  });
+});
+
 
 </script>
 </html>
