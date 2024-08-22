@@ -84,6 +84,7 @@ p{
   padding-bottom:4px;
 }
 
+html { scroll-behavior: smooth; }
 
 @media  (max-width:768px) {
   .card-agendar{
@@ -133,4 +134,15 @@ p{
   h1{
     font-size: 40px;
   }
+}
+
+
+.navbar-link:hover {
+  color:#fac4a0;
+  transition: 0.4s;
+}
+
+.navbar-link{
+  color:#ffffff;
+  transition: 0.4s;
 }

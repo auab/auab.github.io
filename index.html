@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -24,16 +25,16 @@
           </a>
         </div>
         <div class="lg:flex gap-2.5 hidden text-white"><!--nav-->
-            <a href="#top-of-page">Home</a>
-            <a href="">Minhas Informações</a>
-            <a href="">Psicanálise</a>
-            <a href="">Psicologia Analítica</a>
-            <a href="">Blog</a>
-            <a href="">Contato</a>
+            <a class="navbar-link" href="#top-of-page">Home</a>
+            <a class="navbar-link" href="#minhas-informacoes">Minhas Informações</a>
+            <a class="navbar-link" href="#psicologia-analitica">Psicologia Analítica</a>
+            <a class="navbar-link" href="#psicanalise">Psicanálise</a>
+            <a class="navbar-link" href="">Blog</a>
+            <a class="navbar-link" href="#contato">Contato</a>
         </div><!--nav-->
       </div><!--nav + logo-->
-      <div><!--whatsapp-->
-        <img src="./whatsapp-white.png" style="width: 25px;" alt="">
+      <div ><!--whatsapp-->
+        <img  src="./whatsapp-white.png" style="width: 25px;" alt="">
       </div> <!--whatsapp-->
     </div><!--header interno-->
   </header>
@@ -48,10 +49,12 @@
     </div>
     <div class="pt-20 flex flex-col">
       <h2>Um teste</h2>
-
-      <a href=""> Blablabla</a>
-
-      <a href=""> Blablabla</a>
+      <a href="#top-of-page">Home</a>
+      <a href="#minhas-informacoes">Minhas Informações</a>
+      <a href="#psicologia-analitica">Psicologia Analítica</a>
+      <a href="#psicanalise">Psicanálise</a>
+      <a href="">Blog</a>
+      <a href="#contato">Contato</a>
     </div>
   </div><!--mobile-navbar-->
 
@@ -75,7 +78,7 @@
     </div><!--primeiro conteudo -imagem de background-->
 
     <!--Segundo Conteudo-->
-
+    <div id="minhas-informacoes" style="margin-top: -100px;margin-bottom: 100px;"></div>
     <div class="md:flex"><!--segundo conteudo-->
       <div class="w-full md:w-1/2 min-h-screen md:min-h-0" style="background-image: url('livros2.jpg');
                   background-repeat: no-repeat;background-size: cover;"><!--imagem segundo conteudo-->
@@ -192,6 +195,7 @@
 
 
 <!--Segundo Conteudo-->
+<div id="psicologia-analitica" style="margin-top: -100px;margin-bottom: 100px;"></div>
 
 <div class="md:flex"><!--terceiro conteudo-->
   <div class="w-full md:w-1/2 min-h-screen md:min-h-0" style="background-image: url('Persona.jpg');
@@ -259,7 +263,7 @@
 
 
         <!--quinto Conteudo-->
-
+        <div id="psicanalise" style="margin-top: -100px;margin-bottom: 100px;"></div>
         <div class="md:flex"><!--quinto conteudo-->
           <div class="w-full md:w-1/2 min-h-screen md:min-h-0" style="background-image: url('livros2.jpg');
                       background-repeat: no-repeat;background-size: cover;"><!--imagem quinto conteudo-->
@@ -318,7 +322,7 @@
         </div><!--Quando Procurar um Psicanalista-->
 
 
-
+        <div id="contato" style="margin-top: -100px;margin-bottom: 100px;"></div>
 <div class="grid grid-cols-1 lg:grid-cols-2 div-cards-agendar" style="max-width: 1200px; margin-left: auto;margin-right: auto; ">
   <div style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;"class="card-agendar card-agendar-1 flex flex-col justify-center  items-center bg-white ">
     <img src="./whatsapp.png" style="width:60px" alt="">
@@ -405,25 +409,6 @@ function openFunction(){
   x.style.width = "100vw";
   }
 
-function smoothScroll(target) {
-  const element = document.getElementById(target);
-  if (element) {
-    window.scrollTo({
-      top: element.offsetTop,
-      behavior: 'smooth'
-    });
-  }
-}
-document.addEventListener('DOMContentLoaded', function() {
-  const anchors = document.querySelectorAll('a[href^="#"]');
-  anchors.forEach(function(anchor) {
-    anchor.addEventListener('click', function(event) {
-      event.preventDefault();
-      const target = anchor.getAttribute('href').substring(1);
-      smoothScroll(target);
-    });
-  });
-});
 
 
 </script>

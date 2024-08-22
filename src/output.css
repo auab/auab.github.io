@@ -747,10 +747,6 @@ video {
   padding-top: 1.75rem;
 }
 
-.pb-3 {
-  padding-bottom: 0.75rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -859,6 +855,10 @@ p{
   padding-bottom:4px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media  (max-width:768px) {
   .card-agendar{
     width: 100vw;
@@ -917,6 +917,16 @@ p{
   }
 }
 
+.navbar-link:hover {
+  color:#fac4a0;
+  transition: 0.4s;
+}
+
+.navbar-link{
+  color:#ffffff;
+  transition: 0.4s;
+}
+
 @media (min-width: 768px) {
   .md\:col-span-1 {
     grid-column: span 1 / span 1;
@@ -942,12 +952,12 @@ p{
     align-items: center;
   }
 
-  .md\:p-3 {
-    padding: 0.75rem;
-  }
-
   .md\:p-1 {
     padding: 0.25rem;
+  }
+
+  .md\:p-3 {
+    padding: 0.75rem;
   }
 
   .md\:px-0 {
