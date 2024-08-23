@@ -138,11 +138,34 @@ html { scroll-behavior: smooth; }
 
 
 .navbar-link:hover {
-  color:#fac4a0;
+  color:#BF987E;
   transition: 0.4s;
 }
 
 .navbar-link{
   color:#ffffff;
   transition: 0.4s;
+}
+
+
+.main-button{
+  background-color: #082C51;
+  transition: 0.4s;
+}
+
+.main-button:hover{
+  background-color: #4b4b4b;
+  transition: 0.4s;
+}
+
+.agendar-button{
+  color:#d1ad6a;
+  transition: 0.4s;
+  font-weight: bold;
+}
+
+.agendar-button:hover{
+  color:#55290c;
+  transition: 0.4s;
+  font-weight: bold;
 }

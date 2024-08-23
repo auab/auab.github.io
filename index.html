@@ -34,7 +34,8 @@
         </div><!--nav-->
       </div><!--nav + logo-->
       <div ><!--whatsapp-->
-        <img  src="./whatsapp-white.png" style="width: 25px;" alt="">
+        <a target="_blank" href="https://api.whatsapp.com/send/?phone=5511991027337&text=Ol%C3%A1+Ricardo+Ramalho%2C+estava+no+site+e+gostaria+de+agendar+uma+consulta.&type=phone_number&app_absent=0">
+          <img  src="./whatsapp-white.png" style="width: 25px;" alt=""></a>
       </div> <!--whatsapp-->
     </div><!--header interno-->
   </header>
@@ -49,12 +50,12 @@
     </div>
     <div class="pt-20 flex flex-col">
       <h2>Um teste</h2>
-      <a href="#top-of-page">Home</a>
-      <a href="#minhas-informacoes">Minhas Informações</a>
-      <a href="#psicologia-analitica">Psicologia Analítica</a>
-      <a href="#psicanalise">Psicanálise</a>
-      <a href="">Blog</a>
-      <a href="#contato">Contato</a>
+      <a class="mobilenav-link" onclick="closeFunction()" href="#top-of-page">Home</a>
+      <a class="mobilenav-link" onclick="closeFunction()" href="#minhas-informacoes">Minhas Informações</a>
+      <a class="mobilenav-link" onclick="closeFunction()" href="#psicologia-analitica">Psicologia Analítica</a>
+      <a class="mobilenav-link" onclick="closeFunction()" href="#psicanalise">Psicanálise</a>
+      <a class="mobilenav-link" onclick="closeFunction()" href="">Blog</a>
+      <a class="mobilenav-link" onclick="closeFunction()" href="#contato">Contato</a>
     </div>
   </div><!--mobile-navbar-->
 
@@ -71,14 +72,15 @@
               <div ><h2 class="text-white uppercase font-bold text-3l">Ricardo Ramalho</h2></div>
               <div><h1 class="text-white uppercase font-bold">Lorem Ipsum Lorem Ipsum</h1></div>
               <div class="text-white uppercase font-bold text-l">Lorem Ipsum Lorem Ipsum Lorem Ipsum</div>
-              <div class="text-white pt-7"><a class=" blue-bg px-5 py-3 rounded uppercase font-bold" href="">Entenda melhor</a></div>
+              <div class="text-white pt-7"><a target="_blank" class=" main-button px-5 py-3 rounded uppercase font-bold" href="https://api.whatsapp.com/send/?phone=5511991027337&text=Ol%C3%A1+Ricardo+Ramalho%2C+estava+no+site+e+gostaria+de+agendar+uma+consulta.&type=phone_number&app_absent=0">
+                Entenda melhor</a></div>
             </div><!--conteudo-->
           </div><!--primeiro conteudo-->
       </div><!--overlay-->
     </div><!--primeiro conteudo -imagem de background-->
 
     <!--Segundo Conteudo-->
-    <div id="minhas-informacoes" style="margin-top: -100px;margin-bottom: 100px;"></div>
+    <div id="minhas-informacoes" style="margin-top: -50px;margin-bottom: 50px;"></div>
     <div class="md:flex"><!--segundo conteudo-->
       <div class="w-full md:w-1/2 min-h-screen md:min-h-0" style="background-image: url('livros2.jpg');
                   background-repeat: no-repeat;background-size: cover;"><!--imagem segundo conteudo-->
@@ -195,7 +197,7 @@
 
 
 <!--Segundo Conteudo-->
-<div id="psicologia-analitica" style="margin-top: -100px;margin-bottom: 100px;"></div>
+<div id="psicologia-analitica" style="margin-top: -50px;margin-bottom: 50px;"></div>
 
 <div class="md:flex"><!--terceiro conteudo-->
   <div class="w-full md:w-1/2 min-h-screen md:min-h-0" style="background-image: url('Persona.jpg');
@@ -263,7 +265,7 @@
 
 
         <!--quinto Conteudo-->
-        <div id="psicanalise" style="margin-top: -100px;margin-bottom: 100px;"></div>
+        <div id="psicanalise" style="margin-top: -50px;margin-bottom: 50px;"></div>
         <div class="md:flex"><!--quinto conteudo-->
           <div class="w-full md:w-1/2 min-h-screen md:min-h-0" style="background-image: url('livros2.jpg');
                       background-repeat: no-repeat;background-size: cover;"><!--imagem quinto conteudo-->
@@ -322,19 +324,20 @@
         </div><!--Quando Procurar um Psicanalista-->
 
 
-        <div id="contato" style="margin-top: -100px;margin-bottom: 100px;"></div>
+        <div id="contato" style="margin-top: -50px;margin-bottom: 50px;"></div>
 <div class="grid grid-cols-1 lg:grid-cols-2 div-cards-agendar" style="max-width: 1200px; margin-left: auto;margin-right: auto; ">
   <div style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;"class="card-agendar card-agendar-1 flex flex-col justify-center  items-center bg-white ">
     <img src="./whatsapp.png" style="width:60px" alt="">
     <h2 class="h2-card py-8">(11)99102-7337</h2>
     <p>Agende pelo nosso whatsapp</p>
-    <a href="">AGENDAR</a>
+    <a class="agendar-button" target="_blank" href="https://api.whatsapp.com/send/?phone=5511991027337&text=Ol%C3%A1+Ricardo+Ramalho%2C+estava+no+site+e+gostaria+de+agendar+uma+consulta.&type=phone_number&app_absent=0">
+      AGENDAR</a>
   </div>
   <div style=" box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;"class=" card-agendar card-agendar-2 flex flex-col justify-center  items-center bg-white">
     <img src="./mail.png" style="width:60px" alt="">
     <h2 class="h2-card py-8">(11)99102-7337</h2>
     <p>Agende pelo nosso E-mail</p>
-    <a href="">AGENDAR</a>
+    <a class="agendar-button" href="mailto:lrtramalho@gmail.com">AGENDAR</a>
   </div>
 </div>
 
@@ -354,10 +357,11 @@
       <div class="col-span-2 md:col-span-1 text-left">
         <h3>Explore</h3>
         <ul>
-          <li>Home</li>
-          <li>Minhas informações</li>
-          <li>Psicanálise</li>
-          <li>Contato</li>
+          <li><a href="#top-of-page">Home</a></li>
+          <li><a href="#minhas-informacoes">Minhas informações</a></li>
+          <li><a href="#psicologia-analitica">Psicologia Analítica</a></li>
+          <li><a href="#psicanalise">Psicanálise</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </div>
       <div class="col-span-2 md:col-span-1 text-left">
