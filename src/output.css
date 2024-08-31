@@ -584,6 +584,22 @@ video {
   margin-bottom: 0px;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -594,10 +610,6 @@ video {
 
 .hidden {
   display: none;
-}
-
-.h-full {
-  height: 100%;
 }
 
 .h-screen {
@@ -660,6 +672,10 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -678,12 +694,21 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.px-28 {
+  padding-left: 7rem;
+  padding-right: 7rem;
 }
 
 .px-5 {
@@ -706,6 +731,11 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -719,16 +749,16 @@ video {
   padding-bottom: 6rem;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
 .pb-7 {
   padding-bottom: 1.75rem;
 }
 
 .pr-28 {
   padding-right: 7rem;
-}
-
-.pr-4 {
-  padding-right: 1rem;
 }
 
 .pt-10 {
@@ -759,12 +789,27 @@ video {
   text-align: justify;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -803,7 +848,7 @@ header{
 }
 
 body{
-  font-family: "Montserrat", sans-serif;
+  font-family: "EB Garamond", serif;
   color: #bdbdbd;
 }
 
@@ -827,7 +872,6 @@ h2{
 }
 
 .lista-formacao{
-  font-size: 12px;
   color: #bdbdbd;
 }
 
@@ -913,7 +957,7 @@ html {
   }
 
   h1{
-    font-size: 40px;
+    font-size: 20px;
   }
 }
 
@@ -928,12 +972,22 @@ html {
 }
 
 .main-button{
-  background-color: #082C51;
+  background-color: #d1d1d1;
   transition: 0.4s;
 }
 
 .main-button:hover{
-  background-color: #4b4b4b;
+  background-color: #082C51;
+  transition: 0.4s;
+}
+
+.main-button-green{
+  background-color: #d1d1d1;
+  transition: 0.4s;
+}
+
+.main-button-green:hover{
+  background-color: #3F4C3B;
   transition: 0.4s;
 }
 
@@ -947,6 +1001,11 @@ html {
   color:#55290c;
   transition: 0.4s;
   font-weight: bold;
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
@@ -987,6 +1046,16 @@ html {
     padding-right: 0px;
   }
 
+  .md\:px-28 {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -1017,6 +1086,11 @@ html {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .lg\:px-28 {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
   .lg\:pb-0 {
     padding-bottom: 0px;
   }
@@ -1026,6 +1100,11 @@ html {
   .xl\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .xl\:px-28 {
+    padding-left: 7rem;
+    padding-right: 7rem;
   }
 
   .xl\:pt-24 {

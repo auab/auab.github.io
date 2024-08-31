@@ -13,47 +13,46 @@
 </head>
 <body>
   <div id="top-of-page"></div>
-  <header id="navbar" class="fixed my-0 top-0 w-full flex justify-center item bg-transparent p-5  " style="z-index: 999;">
-    <div class="max-w-5xl flex justify-between items-center w-full p-5 gap-2.5 h-full"><!--header interno-->
-      <div class="flex justify-between w-full h-full items-center pr-4" style="border-right:1px solid rgba(105, 105, 105, 0.596) ;"><!--nav + logo-->
-        <div> <!--logo-->
-          <img src="./RR_WHITE.png" style="width: 60px;" alt="">
-        </div><!--logo-->
-        <div class="px-5 lg:hidden">
+  <header id="navbar" class="green-bg fixed my-0 top-0 w-full flex flex-col justify-center items-center bg-transparent p-2  " style="z-index: 999;">
+    <div class="w-full justify-center"> <!--logo-->
+
+      <img src="./RR_WHITE.png" style="width: 60px; margin:auto" alt="">
+    </div><!--logo-->
+    <div class="max-w-5xl flex justify-between items-center w-full p-2 gap-2.5"><!--header interno-->
+
+        <div class="px-5 lg:hidden" style="margin: auto;">
           <a href="javascript:void(0);" onclick="openFunction()">
             <i class="fa fa-bars"></i>
           </a>
         </div>
-        <div class="lg:flex gap-2.5 hidden text-white"><!--nav-->
-            <a class="navbar-link" href="#top-of-page">Home</a>
-            <a class="navbar-link" href="#minhas-informacoes">Minhas Informações</a>
-            <a class="navbar-link" href="#psicologia-analitica">Psicologia Analítica</a>
-            <a class="navbar-link" href="#psicanalise">Psicanálise</a>
+        <div class="lg:flex gap-2.5 hidden text-white" style="margin:auto;"><!--nav-->
+            <a class="navbar-link" href="#top-of-page">Página Inicial</a>
+            <a class="navbar-link" href="#minhas-informacoes">O Analista</a>
+            <a class="navbar-link" href="#abordagem">Abordagem</a>
+            <a class="navbar-link" href="#perguntas-frequentes">Perguntas Frequentes</a>
+            <a class="navbar-link" href="#depoimentos">Depoimentos</a>
             <a class="navbar-link" href="">Blog</a>
             <a class="navbar-link" href="#contato">Contato</a>
         </div><!--nav-->
-      </div><!--nav + logo-->
-      <div ><!--whatsapp-->
-        <a target="_blank" href="https://api.whatsapp.com/send/?phone=5511991027337&text=Ol%C3%A1+Ricardo+Ramalho%2C+estava+no+site+e+gostaria+de+agendar+uma+consulta.&type=phone_number&app_absent=0">
-          <img  src="./whatsapp-white.png" style="width: 25px;" alt=""></a>
-      </div> <!--whatsapp-->
+
     </div><!--header interno-->
   </header>
 
   <div id="mobileMenu" class="bg-white bottom-0 left-0 fixed flex flex-col justify-start items-center pt-3 h-screen" style="z-index: 10000;  width:0px; height: 0px;"><!--mobile-navbar-->
     <div class="flex justify-end pr-28 w-full">
-      <div>
+      <div style="margin-top: 10px;">
         <a href="javascript:void(0);" onclick="closeFunction()">
           <i class="fa-solid fa-x" id="close-icon"></i>
         </a>
       </div>
     </div>
     <div class="pt-20 flex flex-col">
-      <h2>Um teste</h2>
-      <a class="mobilenav-link" onclick="closeFunction()" href="#top-of-page">Home</a>
-      <a class="mobilenav-link" onclick="closeFunction()" href="#minhas-informacoes">Minhas Informações</a>
-      <a class="mobilenav-link" onclick="closeFunction()" href="#psicologia-analitica">Psicologia Analítica</a>
-      <a class="mobilenav-link" onclick="closeFunction()" href="#psicanalise">Psicanálise</a>
+      <img src="./RR_BLACK.png" style="width: 60px; margin-left: auto;margin-right: auto; margin-bottom: 7px;" alt="">
+      <a class="mobilenav-link" onclick="closeFunction()" href="#top-of-page">Página Inicial</a>
+      <a class="mobilenav-link" onclick="closeFunction()" href="#minhas-informacoes">O Analista</a>
+      <a class="mobilenav-link" onclick="closeFunction()" href="#abordagem">Abordagem</a>
+      <a class="mobilenav-link" onclick="closeFunction()" href="#perguntas-frequentes">Perguntas Frequentes</a>
+      <a class="mobilenav-link" onclick="closeFunction()" href="#depoimentos">Depoimentos</a>
       <a class="mobilenav-link" onclick="closeFunction()" href="">Blog</a>
       <a class="mobilenav-link" onclick="closeFunction()" href="#contato">Contato</a>
     </div>
@@ -63,11 +62,11 @@
 
     <!--Primeiro Conteudo-->
 
-    <div  class="flex flex-grow"style="background-image: url('livros.jpg'); margin-top: -150px;
+    <div  class="flex flex-grow"style="background-image: url('livros.jpg');
                   background-repeat: no-repeat;background-size: cover;"><!--primeiro conteudo -imagem de background-->
 
-      <div class="flex flex-column flex-grow items-center justify-center" style="background-image: radial-gradient(rgba(235, 235, 235, 0.507), rgba(99, 99, 99, 0.527), rgb(3, 3, 3)); z-index: 10;height: calc(100vh + 150px);"><!--overlay-->
-          <div style="padding-top:200px; padding-left: 80px;padding-bottom:40px; height: calc(100vh + 150px);" class="flex flex-grow w-full items-end md:items-center text-center max-w-5xl md:text-left min-h-screen"><!--primeiro conteudo-->
+      <div class="flex flex-column flex-grow items-center justify-center" style="background-image: radial-gradient(rgba(235, 235, 235, 0.507), rgba(99, 99, 99, 0.527), rgb(3, 3, 3)); z-index: 10;height: calc(100vh-116px);"><!--overlay-->
+          <div style="padding-top:200px; padding-left: 80px;padding-bottom:40px; height: calc(100vh-116px);" class="flex flex-grow w-full items-end md:items-center text-center max-w-5xl md:text-left min-h-screen"><!--primeiro conteudo-->
             <div class="flex flex-col "><!--conteudo-->
               <div ><h2 class="text-white uppercase font-bold text-3l">Ricardo Ramalho</h2></div>
               <div><h1 class="text-white uppercase font-bold">Lorem Ipsum Lorem Ipsum</h1></div>
@@ -82,87 +81,105 @@
     <!--Segundo Conteudo-->
 
     <div class="md:flex"><!--segundo conteudo-->
-      <div class="w-full md:w-1/2 min-h-screen md:min-h-0" style="background-image: url('livros2.jpg');
-                  background-repeat: no-repeat;background-size: cover;"><!--imagem segundo conteudo-->
-      </div><!--imagem segundo conteudo-->
+      <div class="w-full md:w-1/2 min-h-screen md:min-h-0 blue-bg px-5 md:px-10 lg:px-28  py-5">
+        <img class="mb-8" style="" src="./livros2.jpg" alt="">
+        <span style="display: block;width: 100%; border: 1px solid #d1d1d1 ; " class="main-button text-center rounded-sm text-black hover:text-white">
+          <a target="_blank" class=" px-5   font-bold mt-5" href="https://api.whatsapp.com/send/?phone=5511991027337&text=Ol%C3%A1+Ricardo+Ramalho%2C+estava+no+site+e+gostaria+de+agendar+uma+consulta.&type=phone_number&app_absent=0">
+            Agende uma consulta</a>
+        </span>
+      </div>
       <div id="minhas-informacoes" style="margin-top: -50px;margin-bottom: 50px;"></div>
       <div class="w-full md:w-1/2 flex justify-center  blue-bg px-7 md:p-1"><!--texto segundo conteudo-->
         <div class="texto-2quadros pb-7"><!--conteudo-->
-          <h1 class="h1-quadros">Ricardo Ramalho</h1>
-          <h2 class="h2-2quadros text-white">Formação</h2>
-          <ul class="lista-formacao text-justify">
+          <h2 class="h2-2quadros text-white text-center p-2">O Analista</h2>
+          <h2 class="h2-2quadros text-white text-center p-2">Ricardo Ramalho</h2>
+          <p class=" text-justify text-base pb-5">
+            Olá, sou o Ricardo Ramalho, me graduei como Bacharel em Análise de Sistemas na FATEC e tive uma longa experiência no mundo corporativo, na busca de um desejo antigo me aprofundei nos assuntos da mente, fiz a Formação de Psicanalista do Instituto Brasileiro de Psicanálise e a Formação de Analista Junguiano (Psicologia Analítica) do Instituto Távola, contudo, senti uma necessidade profunda de me aprimorar, de forma a trazer diferenciais em minha abordagem, busquei me aprimorar em diferentes de formas de pensar sob a luz da filosofia e sociologia, adentrei a história, as artes e diferentes narrativas (sejam elas internas. Externas ou metafisicas) acredito que acima de tudo somos seres compostos de histórias e narrativas, compreende-las é essencial, para o nosso desenvolvimento.
+
+          </p>
+          <ul class="lista-formacao text-base text-justify">
             <li>
-              Formado em Psicologia Analítica pelo Instituto Esfera/Távola.
+              Formado em Psicanálise pelo IBPC (Instituto Brasileiro de Psicanálise);
             </li>
             <li>
-              Formado em Psicanálise pelo IBPC (Instituto Brasileiro de Psicanálise).
+              Formado em Psicologia Analítica pelo Instituto Esfera/Távola;
             </li>
             <li>
-              Formado em Terapias Holísticas pela ABRATH (Associação Brasileira dos Terapeutas Holísticos).
+              Formado em Terapias Holísticas pela ABRATH;
             </li>
             <li>
-              Pós-Graduação em Arteterapia - Faculdade Líbano
+              Pós-Graduação em Arteterapia - Faculdade Líbano;
             </li>
             <li>
-              Pós-Graduação em Literatura Comparada - Faculdade Líbano
+              Pós-Graduação em Literatura Comparada - Faculdade Líbano;
             </li>
             <li>
-              Pós-Graduação em Religião Comparada - Faculdade Cenes
+              Pós-Graduação em Religião Comparada - Faculdade CENES;
             </li>
             <li>
-              Pós-Graduação em Mitologia Comparada - Instituto Dedalus
+              Pós-Graduação em Mitologia Comparada - Instituto Dedalus;
             </li>
             <li>
-              Pós-Graduação em Contos de Fadas - Instituto Dedalus
+              Pós-Graduação em Contos de Fadas - Instituto Dedalus;
             </li>
             <li>
-              Pós-Graduação em História Geral - Faculdade Focus
+              Pós-Graduação em História Geral - Faculdade Focus;
             </li>
             <li>
-              Pós-Graduação em História das Religiões - Faculdade Cenes
+              Pós-Graduação em História das Religiões - Faculdade CENES;
             </li>
             <li>
-              Pós-Graduação em Antropologia Social e Cultural - Faculdade Focus
+              Pós-Graduação em Antropologia Social e Cultural - Faculdade Focus;
             </li>
             <li>
-              Pós-Graduação em História da Arte - Faculdade Focus
+              Pós-Graduação em História da Arte - Faculdade Focus;
             </li>
             <li>
-              Pós-Graduação em Teologia Comparada - Faculdade Cenes
+              Pós-Graduação em Teologia Comparada - Faculdade CENES;
             </li>
             <li>
-              Pós-Graduação em Teologia Sistemática - Faculdade Cenes
+              Pós-Graduação em Teologia Sistemática - Faculdade CENES;
             </li>
             <li>
-              Pós-Graduação em Teoria da Literatura e Produção Textual - Faculdade Focus
+              Pós-Graduação em Teoria da Literatura e Produção Textual - Faculdade Focus;
             </li>
             <li>
-              Pós-Graduação em Letras com ênfase em Linguística - Faculdade Focus
+              Pós-Graduação em Letras com ênfase em Linguística - Faculdade Focus;
             </li>
+
           </ul>
 
-          <h2 class="h2-2quadros">Cursos</h2>
-          <ul class="lista-formacao text-justify">
-            <li>
-              Pecados, uma anatomia da alma - Luiz Felipe Pondé
-            </li>
-            <li>
-              Seminário Eleusis Joseph Campbell - Mitosfera
-            </li>
-            <li>
-              Escrita Literária - Marcelino Freire
-            </li>
-            <li>
-              Escrita Criativa - Quadro Amarelo
-            </li>
-            <li>
-              A Formação do imaginário - A outra via
-            </li>
-          </ul>
+
         </div><!--conteudo-->
 
       </div><!--texto segundo conteudo-->
     </div><!--segundo conteudo-->
+    <div id="abordagem" style="margin-top: -50px;margin-bottom: 50px;"></div>
+    <div class="w-full flex justify-center green-bg py-10 xl:py-24"><!--abordagem integrativa e multidisciplinar-->
+      <div class="text-center " style="width: 1024px"><!--texto abordagem integrativa e multidisciplinar-->
+        <h1 class="h1-quadros-novo">Abordagem Integrativa e Multidisciplinar</h1>
+        <div class="text-justify text-lg mx-7">
+        <p class="mb-1">Todos os atendimentos são feitos online mediante agendamento. Em minha prática de Análise, sigo duas linhas: a Psicologia Analítica, com base nos estudos e ensinamentos de Carl Gustav Jung, ou a Psicanálise de Sigmund Freud. A escolha da abordagem pode ser feita pelo próprio analisando ou indicada por mim, após uma avaliação cuidadosa do perfil e dos conteúdos trazidos durante o atendimento.</p>
+        <p class="mb-1">Nos meus atendimentos, trago uma perspectiva que vai além das abordagens convencionais. Com formação em diversas áreas, integro elementos de filosofia, sociologia, contos de fadas, mitologia, literatura, arte, história, religiões e espiritualidade. Esses componentes são adaptados à realidade e ao perfil de cada analisando. Caso algum desses temas não faça parte do cotidiano do analisando, eles não serão foco ou atributo de análise, minha formação diversificada permite adaptar o processo para dialogar tanto com quem valoriza temas mais metafísicos e simbólicos, quanto com quem busca um caminho mais pragmático e racional. Contudo, compreendo que cada pessoa é um universo de histórias a serem lidas, interpretadas e compreendidas. Cada história é única, com personagens e tramas próprias, e é por isso que a análise deve se adaptar à singularidade de cada indivíduo.</p>
+        <p class="mb-1">Meu objetivo é oferecer ao analisando um espaço acolhedor e seguro. Busco ser prudente, claro e objetivo em minhas colocações e constatações. Além disso, a transdisciplinaridade da minha formação me permite sugerir referências que auxiliem na contextualização das questões trazidas. Posso, em momentos oportunos, indicar livros, obras de arte, músicas, séries, filmes e até jogos que dialoguem com o processo de análise, oferecendo diferentes caminhos de reflexão e autoconhecimento. Também podemos utilizar a arteterapia como uma ferramenta valiosa, explorando a produção de textos, desenhos e outras expressões artísticas dentro do processo de Análise.</p>
+          <img src="./quadro-abstrato.png" class="py-3" alt="">
+          <span style="display: block;width: 50%; border: 1px solid #d1d1d1; margin: auto; " class="main-button-green text-center rounded-sm text-black hover:text-white">
+            <a target="_blank" class=" px-5   font-bold mt-5" href="https://api.whatsapp.com/send/?phone=5511991027337&text=Ol%C3%A1+Ricardo+Ramalho%2C+estava+no+site+e+gostaria+de+agendar+uma+consulta.&type=phone_number&app_absent=0">
+              Agende uma consulta</a>
+          </span>
+      </div>
+        </div><!--texto abordagem integrativa e multidisciplinar-->
+    </div><!--abordagem integrativa e multidisciplinar-->
+
+
+
+
+
+
+
+
+
+
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full bloco4"><!--galeria-->
 
@@ -200,6 +217,10 @@
 <!--Segundo Conteudo-->
 
 
+
+
+
+
 <div class="md:flex"><!--terceiro conteudo-->
   <div class="w-full md:w-1/2 min-h-screen md:min-h-0" style="background-image: url('Persona.jpg');
               background-repeat: no-repeat;background-size: cover;background-position: center;"><!--imagem terceiro conteudo-->
@@ -221,6 +242,13 @@
 
   </div><!--texto terceiro conteudo-->
 </div><!--terceiro conteudo-->
+
+
+
+
+
+
+
 
 
 <div class="w-full flex justify-center green-bg py-10 xl:py-24"><!--o que é psico analit-->
@@ -394,15 +422,10 @@ window.onscroll = function() {
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-104px";
+    document.getElementById("navbar").style.top = "-164px";
   }
   prevScrollpos = currentScrollPos;
-  if (window.scrollY==0) {
-    document.getElementById("navbar").style.backgroundColor = "transparent";
-  }
-  else {
-    document.getElementById("navbar").style.backgroundColor = "#082C51";
-  }
+
 }
 function closeFunction(){
   var x = document.getElementById("mobileMenu");
